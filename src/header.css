@@ -1,0 +1,24 @@
+html{
+    box-sizing: content-box;
+}
+
+html * { /*El html * hace que sea para todos los hijos de html*/
+    box-sizing: inherit; /*hace que hereden este box-sizing*/
+}
+
+header{
+    display:flex;
+    justify-content:center;
+    background-color:#fff;
+    padding:22px;
+    box-shadow: 1px 2px 5px rgb(0,0,0,0.3); /* derecha abajo blur color*/
+    z-index:2; /*para que el box shadow no desaparezca cuando le agreguemos mas elementos al header*/
+    position:relative; /*para que la propiedad anterior funcione, necesita de esta linea*/
+}
+
+header input{
+    outline:none; /*para que al presionar dentro dle input no se vea azul*/
+    border:solid 1px #eee;
+    padding:10px 5px; /* vertical horizontal */
+    border-radius:4px;
+}
